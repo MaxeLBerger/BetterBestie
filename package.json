@@ -5,14 +5,19 @@
   "main": "dist/server/index.js",
   "scripts": {
     "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
-    "dev:server": "nodemon --watch src/server --exec ts-node src/server/index.ts",
+    "dev:server": "nodemon",
     "dev:client": "vite",
     "build": "npm run build:server && npm run build:client",
     "build:server": "tsc -p tsconfig.server.json",
     "build:client": "vite build",
     "start": "node dist/server/index.js"
   },
-  "keywords": ["typescript", "react", "express", "fullstack"],
+  "keywords": [
+    "typescript",
+    "react",
+    "express",
+    "fullstack"
+  ],
   "author": "",
   "license": "ISC",
   "dependencies": {
@@ -39,6 +44,7 @@
     "concurrently": "^9.2.1",
     "nodemon": "^3.1.11",
     "ts-node": "^10.9.2",
+    "tsx": "^4.20.6",
     "typescript": "^5.9.3",
     "vite": "^7.2.4"
   }
