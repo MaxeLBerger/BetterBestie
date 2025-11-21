@@ -1,14 +1,16 @@
 # ✨ GlowUp Challenge
 
-A TypeScript full-stack web application designed to help users track daily challenges, build better habits, and connect with friends on their personal growth journey. Built with a mobile-first approach for an optimal experience on all devices.
+A TypeScript full-stack web application for the 30-day GlowUp Challenge. Help users transform their wellness routine through daily guided tasks across hydration, exercise, mindfulness, nutrition, learning, and sleep. Built with a mobile-first approach for an optimal experience on all devices.
 
 ## 🎯 Features
 
+- **Landing Page**: Marketing page explaining the challenge with clear CTAs
+- **Cohort Selection**: Users choose when to start (today, next Monday, or next month)
 - **Authentication**: Secure email/password authentication with JWT tokens
-- **Today**: View and track daily challenges across multiple categories
-- **Progress**: Monitor your streaks, achievements, and overall statistics
-- **Besties**: Connect with friends and compete on the leaderboard
-- **More**: Manage settings, profile, and app preferences
+- **Today View**: See current day's tasks and mark them as complete
+- **Progress Tracking**: Monitor your streaks, achievements, and completion statistics
+- **Besties**: (Coming soon) Connect with friends and accountability partners
+- **More**: (Coming soon) Settings, profile, and preferences
 
 ## 🏗️ Project Structure
 
@@ -125,10 +127,20 @@ The app uses JWT-based authentication:
 
 ## 🗄️ Data Storage
 
-Currently, the app uses in-memory storage for demonstration purposes. In a production environment, you should integrate a database like:
-- PostgreSQL
-- MongoDB
-- MySQL
+Currently, the app uses in-memory storage for demonstration purposes. Data includes:
+- Users and authentication
+- 30-day GlowUp Challenge with 150+ tasks
+- User challenges and start dates
+- Daily check-ins and task completions
+- Streak calculations
+
+⚠️ **Note**: Data resets when the server restarts. For production, integrate a database like PostgreSQL, MongoDB, or MySQL.
+
+## 📚 Documentation
+
+- **Product Specification**: See `docs/product-spec.md` for complete product requirements
+- **Implementation Details**: See `IMPLEMENTATION_NOTES.md` for technical documentation
+- **Agent Instructions**: See `docs/glowup-challenge-spec.md` for AI agent guidelines
 
 ## 🎨 Design System
 
@@ -156,6 +168,43 @@ Environment variables (`.env`):
 
 ### Health Check
 - `GET /api/health` - API health check
+
+## ✅ What's Included in v1
+
+This is the first working version with the following flows fully implemented:
+
+1. **Landing & Signup Flow**
+   - Marketing landing page with feature showcase
+   - User registration
+   - Cohort selection (choose your start date)
+
+2. **Today View**
+   - Displays current day number (e.g., "Day 5 of 30")
+   - Shows 4-6 tasks for the current day
+   - One-click task completion
+   - Progress tracking (X/Y tasks completed)
+   - Success message when all tasks are done
+
+3. **Progress View**
+   - Current streak display
+   - Days completed (X/30)
+   - Achievement badges (7, 14, 21, 30 day milestones)
+   - Upcoming tasks preview
+   - Recent activity log
+
+4. **Challenge Content**
+   - 30-day GlowUp Challenge pre-loaded
+   - 150+ wellness tasks across 6 categories
+   - Tasks progress from basic (days 1-10) to advanced (days 21-30)
+
+## 🚧 Coming in Future Versions
+
+- Bestie/accountability features
+- Social sharing cards
+- Push notifications
+- Profile editing
+- Multiple challenge types
+- Premium features
 
 ## 🤝 Contributing
 

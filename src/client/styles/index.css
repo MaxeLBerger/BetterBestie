@@ -425,6 +425,356 @@ body {
   color: var(--text-secondary);
 }
 
+/* Landing Page Styles */
+.landing-container {
+  min-height: 100vh;
+  background: var(--background-color);
+}
+
+.landing-hero {
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  color: white;
+  padding: 4rem 1.5rem;
+  text-align: center;
+}
+
+.landing-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.landing-subtitle {
+  font-size: 1.125rem;
+  margin-bottom: 2rem;
+  opacity: 0.95;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn-large {
+  padding: 1rem 2rem;
+  font-size: 1.125rem;
+}
+
+.btn-secondary {
+  background: white;
+  color: var(--primary-color);
+  border: 2px solid var(--primary-color);
+}
+
+.btn-secondary:hover {
+  background: var(--surface-color);
+}
+
+.landing-section {
+  padding: 3rem 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.landing-how {
+  background: var(--surface-color);
+}
+
+.landing-cta {
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  color: white;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--text-color);
+}
+
+.landing-cta .section-title {
+  color: white;
+}
+
+.cta-subtitle {
+  font-size: 1.125rem;
+  margin-bottom: 2rem;
+  opacity: 0.95;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.cta-buttons .btn {
+  width: auto;
+  min-width: 200px;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.feature-card {
+  background: white;
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 2rem;
+  text-align: center;
+  transition: all 0.3s;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.feature-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.feature-card h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: var(--text-color);
+}
+
+.feature-card p {
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+}
+
+.steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.step {
+  text-align: center;
+}
+
+.step-number {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: var(--primary-color);
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem;
+}
+
+.step h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: var(--text-color);
+}
+
+.step p {
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+}
+
+/* Cohort Selection Styles */
+.cohort-card {
+  max-width: 500px;
+}
+
+.cohort-description {
+  text-align: center;
+  color: var(--text-secondary);
+  margin-bottom: 2rem;
+  font-size: 0.875rem;
+}
+
+.cohort-options {
+  margin-bottom: 1.5rem;
+}
+
+.cohort-option {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  border: 2px solid var(--border-color);
+  border-radius: 8px;
+  margin-bottom: 0.75rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.cohort-option:hover {
+  border-color: var(--primary-color);
+  background: var(--surface-color);
+}
+
+.cohort-option.selected {
+  border-color: var(--primary-color);
+  background: rgba(99, 102, 241, 0.05);
+}
+
+.cohort-option input[type="radio"] {
+  margin-right: 1rem;
+  cursor: pointer;
+}
+
+.cohort-option-content {
+  flex: 1;
+}
+
+.cohort-option-label {
+  font-weight: 600;
+  color: var(--text-color);
+  margin-bottom: 0.25rem;
+}
+
+.cohort-option-description {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+}
+
+/* Today Page Styles */
+.today-header {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.task-card {
+  transition: all 0.2s;
+}
+
+.task-card.completed {
+  opacity: 0.7;
+  background: var(--surface-color);
+}
+
+.task-card .btn {
+  margin-top: 1rem;
+}
+
+.btn-completed {
+  background: var(--success-color);
+  color: white;
+  cursor: default;
+}
+
+.btn-completed:hover {
+  background: var(--success-color);
+  transform: none;
+}
+
+.btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.success-card {
+  background: linear-gradient(135deg, var(--success-color), #059669);
+  color: white;
+  border: none;
+  text-align: center;
+}
+
+.success-message {
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+/* Progress Page Styles */
+.progress-stats {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.progress-stat {
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.progress-stat:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.upcoming-task {
+  padding: 0.75rem 0;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.upcoming-task:last-child {
+  border-bottom: none;
+}
+
+.achievement {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 0.75rem;
+  border: 1px solid var(--border-color);
+  transition: all 0.2s;
+}
+
+.achievement.unlocked {
+  background: rgba(16, 185, 129, 0.05);
+  border-color: var(--success-color);
+}
+
+.achievement.locked {
+  opacity: 0.5;
+}
+
+.achievement-icon {
+  font-size: 2rem;
+  margin-right: 1rem;
+}
+
+.achievement-info {
+  flex: 1;
+}
+
+.achievement-info strong {
+  display: block;
+  margin-bottom: 0.25rem;
+  color: var(--text-color);
+}
+
+.achievement-description {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+}
+
+.achievement-badge {
+  font-size: 1.5rem;
+  color: var(--success-color);
+}
+
+.activity-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.activity-item:last-child {
+  border-bottom: none;
+}
+
 /* Responsive adjustments */
 @media (min-width: 768px) {
   .bottom-nav {
@@ -437,5 +787,13 @@ body {
 
   .page {
     padding: 2rem;
+  }
+
+  .landing-title {
+    font-size: 3.5rem;
+  }
+
+  .landing-subtitle {
+    font-size: 1.25rem;
   }
 }
