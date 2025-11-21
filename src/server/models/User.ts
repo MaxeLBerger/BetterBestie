@@ -14,7 +14,7 @@ export const userModel = {
   create: (user: Omit<User, 'id' | 'createdAt'>): User => {
     const newUser: User = {
       ...user,
-      id: Math.random().toString(36).substr(2, 9),
+      id: Math.random().toString(36).substring(2, 11),
       createdAt: new Date(),
     };
     users.push(newUser);

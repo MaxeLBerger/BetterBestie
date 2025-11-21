@@ -13,7 +13,7 @@ A TypeScript full-stack web application designed to help users track daily chall
 ## 🏗️ Project Structure
 
 ```
-BetterBestie/
+GlowUpChallenge/
 ├── src/
 │   ├── client/              # Frontend React application
 │   │   ├── components/      # Reusable React components
